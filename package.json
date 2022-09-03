@@ -1,5 +1,5 @@
 {
-  "name": "react-todolist-api",
+  "name": "create-react-app-prictice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://PeterCHEN-JIANRONG.github.io/react-todolist-api"
+  "homepage": "https://PeterCHEN-JIANRONG.github.io/create-react-app-prictice"
 }

@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # 頁面
-
-- [頁面](https://peterchen-jianrong.github.io/react-todolist-api/#/)
+create-react-app 實作練習: 元件、router、朝狀路由、動態路由、axios、useEffect
+- [頁面](https://peterchen-jianrong.github.io/create-react-app-prictice/#/)
 
 ### `npm run deploy`
 使用 `gh-pages` 套件做部屬
