@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 
 function FAQ() {
+  let navigate = useNavigate();
   return (
     <>
       <main>
@@ -8,6 +9,9 @@ function FAQ() {
       </main>
       <nav>
         <Link to="/">Home</Link>
+        <input type="button" value="回首頁" onClick={(e)=>{
+          navigate('/');
+        }}/>
       </nav>
     </>
   );
