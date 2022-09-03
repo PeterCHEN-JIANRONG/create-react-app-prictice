@@ -1,23 +1,15 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+import { Layout } from "./components/layout/Layout";
 import Home from "./components/Home";
 import About from "./components/About";
 import FAQ from "./components/FAQ";
 import { NotFound } from "./components/NotFound";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-
-function Layout() {
-  return (
-    <div>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  );
-}
+import { Tour } from "./components/Tour";
+import { TourList } from "./components/TourList";
+import { Tourpage1 } from "./components/Tourpage1";
+import { Tourpage2 } from "./components/Tourpage2";
+import { TourDetail } from "./components/TourDetail";
 
 function App() {
   return (
@@ -27,6 +19,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="faq" element={<FAQ />} />
+          <Route path="tour" element={<Tour />} >
+            <Route index element={<TourList />} />
+            <Route path="Tourpage1" element={<Tourpage1 />} />
+            <Route path="Tourpage2" element={<Tourpage2 />} />
+            <Route path=":Id" element={<TourDetail />} />
+          </Route>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
